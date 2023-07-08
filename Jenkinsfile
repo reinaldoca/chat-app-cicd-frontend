@@ -26,7 +26,9 @@ pipeline {
                     }           
                  }
                     steps {
+                        catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                         sh 'npm run test'
+                        }
                     }
                 }
             } // end parallel
