@@ -1,0 +1,221 @@
+:root {
+  /* --Gradient_Second: #922EF4; */
+  /* --Gradient_Second: #6439AD; */
+  --Gradient_Second: #39B5E0;
+  --Gradient_First: #31E1F7;
+  --Gradient_Third: #146C94;
+  --White: #ffffff;
+  --Black: #000000;
+  --Chrome: #DBE2E9;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  color: transparent;
+  border-radius: 20px;
+}
+
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control:focus,
+[contenteditable].form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+body {
+  font-family: 'Kalam', cursive;
+  background-color: var(--Chrome);
+  color: var(--Black);
+}
+
+/* Login and Register page */
+#Wrapper {
+  /* background: conic-gradient(from 315deg, #6439AD, #B91BF7); */
+  background: conic-gradient(from 315deg, var(--Gradient_Third), var(--Gradient_First), var(--Gradient_Second));
+  width: 100%;
+  height: 100vh;
+}
+
+#OpeningText {
+  font-family: 'Caveat', cursive;
+  color: var(--White);
+}
+
+#Minor_Wrapper {
+  width: 400px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.24);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.7px);
+  -webkit-backdrop-filter: blur(9.7px);
+}
+
+#Minor_Wrapper h4 {
+  color: var(--Gradient_Second);
+}
+
+#inpform label {
+  font-size: 1.1rem;
+  color: var(--White);
+}
+
+#inpform input::placeholder {
+  color: var(--White);
+}
+
+#inpform input[type=text],
+#inpform input[type=password] {
+  background: none;
+  border: none;
+  border-radius: 0%;
+  border-bottom: 1px solid var(--White);
+  color: var(--White);
+}
+
+#inpform input[type=text]:focus,
+#inpform input[type=password]:focus {
+  border-bottom: 1px solid #0d6efd;
+}
+
+/* Home Page */
+
+.navbar {
+  background-color: var(--Gradient_Second);
+}
+
+#sidebar {
+  background-color: var(--White);
+  overflow-y: scroll;
+}
+
+.styled {
+  background-color: var(--Chrome);
+  border: 1px solid var(--Chrome);
+  color: var(--Black);
+}
+
+.styled::placeholder {
+  color: var(--Black);
+}
+
+.styled:focus {
+  background-color: var(--Chrome);
+  border: 1px solid var(--Chrome);
+  color: var(--Black);
+}
+
+.StyledButton {
+  background-color: var(--Gradient_Second);
+  color: var(--White);
+}
+
+.StyledButton:focus,
+.StyledButton:hover,
+.StyledButton:active {
+  outline: none;
+  box-shadow: none;
+  color: var(--White);
+}
+
+.dropdown-menu>li>a:hover {
+  background-color: var(--Chrome);
+}
+
+.UserComponent {
+  background-color: var(--Chrome);
+  border-radius: 5px;
+  color: var(--Black);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.UserComponent:hover {
+  background-color: var(--Gradient_Second);
+  color: var(--White);
+}
+
+/* mychats page */
+
+.MyChats {
+  background-color: var(--White);
+  border-radius: 5px;
+  border: 3px solid var(--White);
+  height: 85.3vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.ChatUser {
+  background-color: var(--Chrome);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  height: 75px;
+}
+
+.ChatUser:hover {
+  background-color: var(--Gradient_Second);
+  color: var(--White);
+}
+
+.badge {
+  background-color: var(--Gradient_Second);
+  color: var(--White);
+}
+
+
+.ChatBox {
+  background-color: var(--White);
+  border-radius: 5px;
+  height: 85.3vh;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.ChatBoxOpeningWrapper {
+  background-color: var(--Gradient_Second);
+  color: var(--White);
+}
+
+.MessageBox {
+  background-color: var(--White);
+  position: absolute;
+  top: 60px;
+  height: 70vh;
+  /* overflow-y: scroll; */
+}
+
+.FormBox {
+  height: 55px;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--White);
+  border-top: 1px solid var(--Chrome);
+}
+
+#MessageInput {
+  background-color: var(--Chrome);
+  color: var(--Black);
+  border: 1px solid var(--Chrome);
+}
+
+#MessageInput:hover {
+  color: var(--Black);
+  border: 1px solid var(--Chrome);
+}
