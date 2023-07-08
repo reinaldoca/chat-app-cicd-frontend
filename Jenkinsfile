@@ -105,7 +105,7 @@ pipeline {
         stage('aws-deploy-amplify') {
             steps {
                 withAWS(credentials: 'aws-roxsross', region: "${TARGET_REGION}"){
-                    sh './automation/aws_amplify.sh check'
+                    sh './automation/aws_amplify.sh deploy'
                 }
             } 
         }    
