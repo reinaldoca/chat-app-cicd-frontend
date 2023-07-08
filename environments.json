@@ -1,0 +1,19 @@
+{
+    "environments":{
+        "develop":{    
+            "s3bucketname":"front-devops-deploy-develop",
+            "TARGET_AWS_ACCOUNT":"459137896070",
+            "TARGET_REGION" :"us-east-1",
+            "APP_ID":"d3qp3lfgf2c69x",
+            "AMPLIFY_BRANCH_NAME" :"develop"
+        },
+
+        "master":{    
+            "s3bucketname":"front-devops-deploy-master",
+            "TARGET_AWS_ACCOUNT":"459137896070",
+            "TARGET_REGION" :"us-east-1",
+            "APP_ID":"d3qp3lfgf2c69x",
+            "AMPLIFY_BRANCH_NAME" :"master"
+        }    
+    }   
+}
